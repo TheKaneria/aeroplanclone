@@ -1,0 +1,210 @@
+.containerr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* background-color: red; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.heroleftsidetext {
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.heroleftsidetext span {
+  color: var(--color-theme);
+}
+.leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.leftside p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.vector-image svg .path {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 0;
+}
+.vector-image svg .dashed {
+  stroke-dasharray: 22;
+  animation: dash 8s linear alternate infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.vector-image svg {
+  position: absolute;
+  /* bottom: 100px; */
+  top: 220px !important;
+  right: 140px !important;
+  width: 68% !important;
+  z-index: -10 !important;
+  transform: rotate(165deg) !important;
+  height: 319px;
+}
+.planeimg,
+.content-block {
+  position: relative;
+  z-index: 100;
+}
+
+.location-image {
+  position: absolute;
+  top: 35%;
+  right: 8%;
+}
+
+.planeimg {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+
+  /* background-color: red; */
+}
+
+.herobookbtn {
+  font-weight: 800;
+  background-color: var(--color-background);
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  color: #362a60;
+  border-radius: 15px;
+  font-size: 19px;
+  margin-left: 1.3rem;
+  transition: 0.4s all ease;
+}
+
+.herobookbtn:hover {
+  box-shadow: 0 2px 30px var(--color-theme);
+  transform: scale(1.09);
+}
+.spancolor {
+  color: var(--color-theme) !important;
+}
+.heroleftsidetext {
+  color: #000 !important;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .heroleftsidetext {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .herobookbtn {
+    margin-left: 0px;
+    width: 150px;
+  }
+  .imgsec {
+    margin-top: 2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: 1rem;
+  }
+  .containerr {
+    margin: 0px;
+    padding: 1rem !important;
+  }
+  .heroleftsidetext {
+    font-size: 35px;
+  }
+
+  .vector-image svg {
+    position: absolute;
+    transform: rotate(210deg) !important;
+    top: 380px !important;
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 2720px) {
+  .vector-image svg {
+    position: absolute;
+    /* bottom: 100px; */
+    top: 220px !important;
+    right: 140px !important;
+    width: 68% !important;
+    z-index: -10 !important;
+    transform: rotate(169deg) !important;
+  }
+}
+
+@media screen and (max-width: 1890px) {
+  .vector-image svg {
+    position: absolute;
+    /* bottom: 100px; */
+    top: 220px !important;
+    right: 100px !important;
+    width: 70% !important;
+    z-index: -10;
+    transform: rotate(167deg) !important;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .vector-image svg {
+    position: absolute;
+    /* bottom: 100px; */
+    top: 220px !important;
+    right: 140px !important;
+    width: 70% !important;
+    z-index: -10 !important;
+    transform: rotate(165deg) !important;
+  }
+  .location-image {
+    top: 25%;
+    right: 8%;
+    position: absolute;
+    /* z-index: 10; */
+  }
+}
+
+@media screen and(max-width : 1399px) {
+  .location-image {
+    top: 35%;
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vector-image svg {
+    position: absolute;
+    transform: rotate(216deg) !important;
+    top: 535px !important;
+    left: 10px !important;
+    width: 90% !important;
+    z-index: -10;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .vector-image svg {
+    position: absolute;
+    transform: rotate(220deg) !important;
+    top: 590px !important;
+    left: 10px !important;
+    width: 90% !important;
+    z-index: -10;
+  }
+}

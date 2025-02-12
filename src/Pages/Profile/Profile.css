@@ -1,0 +1,18 @@
+.profile_con {
+  max-width: 1140px;
+  margin: 2rem auto;
+}
+.uploaded-image {
+  display: block;
+  margin-left: 0;
+  width: "100px";
+  height: "100px";
+  object-fit: "contain";
+}
+
+@media screen and (max-width: 1140px) {
+  .profile_con {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

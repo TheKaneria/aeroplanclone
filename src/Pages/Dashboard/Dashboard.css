@@ -1,0 +1,248 @@
+.bookingsec {
+  background-color: var(--color-background);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.bkingtxt {
+  color: var(--color-theme);
+  font-size: 20px;
+  font-weight: 800;
+}
+.frmtxt {
+  color: var(--color-theme);
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100px;
+  /* background-color: red; */
+}
+.custom-date-picker .ant-picker {
+  /* background-color: var(--color-theme); */
+  height: 45px;
+  width: 100%;
+  border: none;
+  /* color: white; */
+  font-weight: 600;
+  width: 100%;
+}
+
+.booking_details_date_pickers .ant-picker {
+  background-color: var(--color-theme) !important;
+  color: #fff;
+}
+
+.booking_details_date_pickers input::placeholder {
+  color: white !important;
+}
+
+.txtinput_booking_details::placeholder {
+  color: white !important;
+}
+
+.disabledatepicker .ant-picker {
+  /* background-color: red; */
+  height: 45px;
+  width: 100%;
+  border: none;
+}
+
+.custom-date-picker .ant-picker:hover,
+.custom-date-picker .ant-picker-focused {
+  border-color: rebeccapurple; /* Border color when focused or hovered */
+}
+
+.custom-date-picker .ant-picker-clear {
+  color: white; /* Close icon color */
+}
+
+.custom-date-picker .ant-picker-suffix {
+  color: white !important; /* Calendar icon color */
+}
+
+.custom-date-picker .ant-picker-input > input::placeholder {
+  color: #000; /* Change placeholder text color to black */
+  opacity: 1; /* Ensure the color is not faded */
+}
+.txtinput {
+  background-color: var(--color-theme);
+  color: white;
+  font-weight: 600;
+  border: none;
+  height: 45px;
+  width: 100%;
+  padding: 0 1rem;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.txtinput ::placeholder {
+  color: #fff;
+}
+.table-div {
+  margin-top: 1rem;
+}
+.infobtn {
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.infobtn:hover {
+  color: var(--color-theme);
+}
+
+.maindivbookinginfo {
+  padding: 2rem;
+  overflow: auto;
+  max-height: 580px;
+}
+
+.maindivbookinginfo::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.custom-table,
+.custom-table th,
+.custom-table td,
+.custom-table tr {
+  border: 1px solid #ddb46b !important;
+}
+
+.custom-table thead th {
+  background-color: #ddb46b; /* Optional: Light background for headers */
+}
+.custom-table thead tr th {
+  border-right: 1px solid white !important;
+}
+.custom-table thead tr th:last-child {
+  border-right: 1px solid #ddb46b !important;
+}
+.custom-table tbody tr {
+  border-bottom: 1px solid #ddb46b !important;
+}
+
+.ref_id_div {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ref_id_Num_div {
+  color: black;
+  font-weight: 600;
+}
+
+.ticket_booking_details_table_border {
+  border-bottom: 1px solid #ddb46b;
+}
+
+.booking_details_baggage_head {
+  font-weight: 700;
+  /* margin-top: 1.2rem; */
+  font-size: 18px;
+}
+
+.booking_details_age_desc {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .table-div {
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: 0px;
+  }
+  .dashboar_resp_gap {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .maindivbookinginfo {
+    padding: 1rem;
+  }
+
+  .resp_modal_main {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/* Add New */
+
+/* Flight Booking Styles */
+
+/* Custom Flight Booking Styles */
+.flight-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flight-section {
+  background: #f8fafc;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.flight-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.flight-info p {
+  font-size: 16px;
+  color: #334155;
+  margin-bottom: 5px;
+}
+
+.airline-logo {
+  width: 60px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.traveler-info {
+  background: #eef2ff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.contact-info {
+  background: #fef9c3;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.baggage-info {
+  background: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.seller-info {
+  background: #e0f2fe;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .flight-info {
+    text-align: center;
+  }
+
+  .airline-logo {
+    display: block;
+    margin: auto;
+  }
+}

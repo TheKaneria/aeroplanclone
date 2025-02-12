@@ -1,0 +1,228 @@
+.details-contt {
+  background-color: var(--color-background);
+}
+
+.bg-cont {
+  background-color: var(--color-theme);
+  padding: 2rem 1rem;
+  border-radius: 14px;
+  max-width: 1440px;
+  margin: 0 auto !important;
+}
+
+.genderSelect {
+  background-color: transparent;
+}
+.inpttticket {
+  background-color: var(--color-background);
+  text-align: start;
+}
+
+.pricee-tag {
+  background-color: var(--color-background);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.pricee-tag h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-theme);
+}
+
+.flight-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.booking_details_datepicker_padding {
+  padding: 0.6rem !important;
+  background-color: var(--color-background);
+}
+
+.booking_details_datepicker_padding:hover {
+  background-color: #f2e7b5;
+  border: 1px solid transparent;
+}
+
+.booking_details_datepicker_padding .ant-picker-suffix {
+  color: var(--color-theme);
+}
+
+.lito {
+  background-color: white;
+  width: 1px;
+  height: 100px;
+  padding: 0px;
+}
+
+.bottomlito {
+  background-color: white;
+  width: 100%;
+  margin: 1rem auto;
+  height: 1px;
+  align-self: center;
+}
+
+.sbmitbtn {
+  cursor: pointer;
+  background-color: var(--color-background);
+  padding: 10px;
+  font-weight: 800;
+  color: var(--color-theme);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.confirmbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-theme);
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirmbtn:hover {
+  background-color: green !important;
+  transition: all ease 0.5s;
+}
+.clsbtn {
+  background-color: var(--color-theme);
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  min-width: 800px; /* Ensure table doesn't shrink */
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Ensure text does not wrap inside table cells */
+.table th,
+.table td {
+  white-space: nowrap;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the header */
+.table thead {
+  background-color: #ddb46b;
+  color: white;
+}
+
+/* Add some spacing between rows */
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Airline logo styles */
+.airline_logo {
+  max-width: 40px;
+  height: auto;
+}
+
+.booking_details_airline_name_heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.custom-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fffbdb;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #fffbdb;
+  border-color: #dbb46b;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "✔";
+  color: #dbb46b;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .flight-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    gap: 0;
+  }
+  .table-responsive {
+    overflow-x: auto;
+    display: block;
+  }
+  .table {
+    font-size: 14px;
+  }
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+  .Confirm_Main h3 {
+    font-size: 18px;
+  }
+  .confirmbtn,
+  .clsbtn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .airline_logo {
+    width: 40px;
+  }
+  .vimanimg {
+    width: 100px;
+  }
+  .durationtxt {
+    font-size: 13px;
+  }
+  .frmtxt {
+    font-size: 13px;
+  }
+  .flight-departure {
+    font-size: 13px;
+  }
+}

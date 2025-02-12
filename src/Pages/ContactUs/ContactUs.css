@@ -1,0 +1,59 @@
+.formcont {
+  background-color: var(--color-background);
+  margin: 3rem auto;
+}
+
+.inputdtails {
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgba(219, 180, 107, 0.2);
+  border: none;
+}
+
+.sendbtndiv {
+  /* background-color: rgba(219, 180, 107, 0.2); */
+  width: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 42px;
+}
+.divvv {
+  font-weight: bold;
+  background-color: rgba(219, 180, 107, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.divvv:hover {
+  background-color: rgba(219, 180, 107, 1);
+  color: #fff;
+}
+.mapcont {
+  background-color: var(--color-background);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+.mapview {
+  height: 400px;
+  border-radius: 10px;
+}
+.roundgod {
+  height: 60px;
+  width: 60px;
+  background-color: var(--color-theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .mapview {
+    height: 300px;
+  }
+}

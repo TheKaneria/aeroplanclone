@@ -1,0 +1,42 @@
+.Hpyclients {
+  margin: 2rem 0;
+  background-color: var(--color-background);
+}
+.hpyclientscont {
+  /* border: 1px solid var(--color-theme); */
+  padding: 2rem 0;
+}
+
+.hpyclienttotal {
+  font-size: 32px;
+}
+
+.iconcont {
+  background-color: var(--color-theme);
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.aboutustitle {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--color-theme);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .iconcont {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+  }
+  .aboutustitle {
+    font-size: 30px;
+    text-align: left;
+  }
+}
