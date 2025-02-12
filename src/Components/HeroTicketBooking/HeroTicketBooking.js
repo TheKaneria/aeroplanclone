@@ -13,7 +13,7 @@ import images from "../../Constants/images";
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { BsFillLuggageFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import dayjs from "dayjs";
 import { GiStopSign } from "react-icons/gi";
 
@@ -874,20 +874,46 @@ const HeroTicketBooking = () => {
                       <div className="fromtxt text-center mb-2">
                         This are the destination in which we're currently serve
                       </div>
-
-                      <div className="row">
-                        <div className="d-flex flex-column flex-md-row col-12 w-100 justify-content-center gap-3">
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        variants={{
+                          hidden: {},
+                          visible: { transition: { staggerChildren: 0.2 } }, // Stagger entrance (200ms delay)
+                          exit: {
+                            transition: {
+                              staggerChildren: 0.2,
+                              staggerDirection: -1,
+                            },
+                          }, // Stagger exit (reverse order)
+                        }}
+                        className="d-flex flex-column flex-md-row col-12 w-100 justify-content-center gap-3"
+                      >
+                        <AnimatePresence mode="popLayout">
                           {getArrivalCityList?.length > 0 ? (
-                            getArrivalCityList?.map((item, index) => (
+                            getArrivalCityList.map((item, index) => (
                               <motion.div
-                                initial={{ x: "100%", opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                exit={{ x: "100%", opacity: 0 }}
-                                transition={{
-                                  duration: 0.5,
-                                  ease: "easeInOut",
+                                key={item.city_code} // Use a stable unique key
+                                variants={{
+                                  hidden: { opacity: 0, x: "100%" },
+                                  visible: {
+                                    opacity: 1,
+                                    x: 0,
+                                    transition: {
+                                      duration: 0.5,
+                                      delay: index * 0.2,
+                                    }, // Delay based on index (200ms apart)
+                                  },
+                                  exit: {
+                                    opacity: 0,
+                                    x: "-100%",
+                                    transition: {
+                                      duration: 0.5,
+                                      delay: index * 0.2,
+                                    }, // Staggered exit
+                                  },
                                 }}
-                                key={index}
                                 className={`dropdown-item1 ${
                                   selectedItem?.city_code === item.city_code
                                     ? "selected"
@@ -907,12 +933,19 @@ const HeroTicketBooking = () => {
                               </motion.div>
                             ))
                           ) : (
-                            <div className="dropdown-no-results">
+                            <motion.div
+                              key="no-results"
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.5 }}
+                              className="dropdown-no-results"
+                            >
                               No results found
-                            </div>
+                            </motion.div>
                           )}
-                        </div>
-                      </div>
+                        </AnimatePresence>
+                      </motion.div>
                     </div>
                   </motion.div>
                 ) : (
