@@ -872,7 +872,8 @@ const HeroTicketBooking = () => {
                     </div>
                     <div className="col-12  gap-2">
                       <div className="fromtxt text-center mb-2">
-                        This are the destination in which we're currently serve
+                        These are the destinations in which we're currently
+                        serving.
                       </div>
                       <motion.div
                         initial="hidden"
